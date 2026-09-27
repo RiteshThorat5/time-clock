@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Time Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="dashboard">
+
+        <!-- =========================
+             HEADER
+        ========================== -->
+
+        <header class="header">
+
+            <h1>TIME DASHBOARD</h1>
+
+            <p class="subtitle">
+                Your Personal Time Manager
+            </p>
+
+        </header>
+
+
+        <!-- =========================
+             LIVE CLOCK
+        ========================== -->
+
+        <section class="clock-card">
+
+            <div id="time">
+                00:00:00
+            </div>
+
+            <div id="ampm">
+                AM
+            </div>
+
+            <div id="date">
+                Sunday, January 1, 2026
+            </div>
+
+            <div class="timezone">
+                India Standard Time • IST
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TIME TOOLS
+        ========================== -->
+
+        <section class="tools">
+
+
+            <!-- =====================
+                 STOPWATCH
+            ====================== -->
+
+            <div class="tool-card stopwatch-card">
+
+                <h2>Stopwatch</h2>
+
+                <p>
+                    Track your time accurately.
+                </p>
+
+                <div id="stopwatchDisplay">
+                    00:00:00
+                </div>
+
+                <div class="stopwatch-buttons">
+
+                    <button id="startStopwatch">
+                        Start
+                    </button>
+
+                    <button id="pauseStopwatch">
+                        Pause
+                    </button>
+
+                    <button id="resetStopwatch">
+                        Reset
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================
+                 TIMER
+            ====================== -->
+
+            <div class="tool-card timer-card">
+
+                <h2>Timer</h2>
+
+                <p>
+                    Set a countdown timer.
+                </p>
+
+                <div id="timerDisplay">
+                    00:00:00
+                </div>
+
+                <div class="timer-inputs">
+
+                    <input
+                        type="number"
+                        id="timerHours"
+                        placeholder="HH"
+                        min="0"
+                        max="99"
+                    >
+
+                    <input
+                        type="number"
+                        id="timerMinutes"
+                        placeholder="MM"
+                        min="0"
+                        max="59"
+                    >
+
+                    <input
+                        type="number"
+                        id="timerSeconds"
+                        placeholder="SS"
+                        min="0"
+                        max="59"
+                    >
+
+                </div>
+
+                <div class="timer-buttons">
+
+                    <button id="startTimer">
+                        Start
+                    </button>
+
+                    <button id="pauseTimer">
+                        Pause
+                    </button>
+
+                    <button id="resetTimer">
+                        Reset
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================
+     ALARM
+====================== -->
+
+<div class="tool-card alarm-card">
+
+    <h2>Alarm</h2>
+
+    <p>
+        Set your personal alarm.
+    </p>
+
+    <input
+        type="time"
+        id="alarmTime"
+    >
+
+    <div class="alarm-buttons">
+
+        <button id="setAlarm">
+            Set Alarm
+        </button>
+
+        <button id="clearAlarm">
+            Clear
+        </button>
+
+    </div>
+
+    <div id="alarmStatus">
+        No alarm set
+    </div>
+
+</div>
+
+</section>
+
+
+          
+
+
+        <!-- =========================
+             CONTROLS
+        ========================== -->
+
+        <section class="controls">
+
+            <button id="themeBtn">
+                Light Theme
+            </button>
+
+            <button id="fullscreenBtn">
+                Fullscreen
+            </button>
+
+            <button id="formatBtn">
+                Switch to 24H
+            </button>
+
+        </section>
+
+
+       <!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+    <p>Ritesh Time Dashboard</p>
+</footer>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
